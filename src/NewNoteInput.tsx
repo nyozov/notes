@@ -18,8 +18,9 @@ export const NewNoteInput: React.FC<NewNoteInputProps> = ({ addNote }) => {
 
   return (
     <div>
-      <div>
+      <div className='input-container'>
         <input
+         
           onChange={updateNote}
           type="text"
           name="note"

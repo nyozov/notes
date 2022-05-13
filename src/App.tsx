@@ -13,7 +13,8 @@ function App() {
   }
   const notes = useSelector<NotesState, NotesState["notes"]>((state) => state.notes);
   return (
-    <>
+    <div className='main'>
+      
       <NewNoteInput addNote={onAddNote} />
       <hr />
       <ul>
@@ -22,7 +23,7 @@ function App() {
         ))}
        
       </ul>
-    </>
+    </div>
   );
 }
 
